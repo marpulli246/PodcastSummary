@@ -32,16 +32,16 @@ def main():
     st.sidebar.header("Podcast RSS Feeds")
     selected_podcast = st.sidebar.selectbox("Select Podcast", options=available_podcast_info.keys())
 
-    st.title("Newsletter Dashboard")
+    #st.title("Newsletter Dashboard")
 
-    available_podcast_info = create_dict_from_json_files('.')
+    #available_podcast_info = create_dict_from_json_files('.')
 
     # Left section - Input fields
-    st.sidebar.header("Podcast RSS Feeds")
+    #st.sidebar.header("Podcast RSS Feeds")
 
     # Dropdown box
-    st.sidebar.subheader("Available Podcasts Feeds")
-    selected_podcast = st.sidebar.selectbox("Select Podcast", options=available_podcast_info.keys())
+    #st.sidebar.subheader("Available Podcasts Feeds")
+    #selected_podcast = st.sidebar.selectbox("Select Podcast", options=available_podcast_info.keys())
 
     if selected_podcast:
 
