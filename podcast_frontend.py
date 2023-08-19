@@ -91,7 +91,19 @@ def main():
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
-    st.sidebar.markdown("**Note**: Podcast processing can take upto 5 mins, please be patient.")
+    st.sidebar.markdown("""
+    <style>
+        .note-style {
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            color: red;  # Optional: change color if needed
+        }
+    </style>
+    <div class="note-style">**Note**: Podcast processing can take up to 5 mins, please be patient.</div>
+    """, 
+    unsafe_allow_html=True
+)
+
 
     if process_button:
 
