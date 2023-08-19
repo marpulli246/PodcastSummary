@@ -6,7 +6,7 @@ import os
 def main():
     st.title("Newsletter Dashboard")
 
-    available_podcast_info = create_dict_from_json_files('.')
+    available_podcast_info = create_dict_from_json_files('')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
