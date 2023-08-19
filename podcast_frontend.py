@@ -32,7 +32,7 @@ def main():
     )
 
 
-st.sidebar.subheader("Available Podcasts Feeds")
+    st.sidebar.subheader("Available Podcasts Feeds")
 
     
     # Using st.sidebar.radio instead of st.sidebar.selectbox
