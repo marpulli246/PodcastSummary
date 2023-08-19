@@ -21,6 +21,8 @@ def main():
         """
         <style>
             .css-17eq0hr a, .css-17eq0hr a:hover {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
                 color: white;
                 background-color: #4A90E2;
             }
@@ -29,7 +31,9 @@ def main():
         unsafe_allow_html=True,
     )
 
-    
+
+st.sidebar.subheader("Available Podcasts Feeds")
+
     
     # Using st.sidebar.radio instead of st.sidebar.selectbox
     selected_podcast = st.sidebar.radio("Available Podcasts", list(available_podcast_info.keys()))
