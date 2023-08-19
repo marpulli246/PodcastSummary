@@ -94,9 +94,9 @@ def main():
     st.sidebar.markdown("""
     <style>
         .note-style {
-            font-family: Arial, sans-serif;
-            font-size: 8px;
-            color: red;  # Optional: change color if needed
+            font-family: Montserrat, sans-serif;
+            font-size: 10px;
+            color: yellow;  # Optional: change color if needed
         }
     </style>
     <div class="note-style">**Note**: Podcast processing can take up to 5 mins, please be patient.</div>
