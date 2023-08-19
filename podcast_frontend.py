@@ -29,20 +29,7 @@ def main():
         unsafe_allow_html=True,
     )
 
-    # Footer
-    st.markdown(
-        """
-        <div style="position: relative; bottom: 0; left: 0; right: 0; background-color: #464E5F; padding: 10px;">
-            <div style="text-align: center;">
-                <a href="https://twitter.com" target="_blank" style="margin-right: 15px;">🐦 Twitter</a>
-                <a href="https://facebook.com" target="_blank" style="margin-right: 15px;">📘 Facebook</a>
-                <a href="https://instagram.com" target="_blank">📸 Instagram</a>
-            </div>
-            <p style="text-align:center; color:white;">© 2023 - Contact Us</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )        
+    
     
     # Using st.sidebar.radio instead of st.sidebar.selectbox
     selected_podcast = st.sidebar.radio("Available Podcasts", list(available_podcast_info.keys()))
@@ -140,14 +127,27 @@ def main():
             st.subheader("Podcast Guest Details")
             st.write(podcast_info["podcast_guest"]['summary'])
 
-        # Display the five key moments
+        # Display the key moments
         st.subheader("Key Moments")
         key_moments = podcast_info['podcast_highlights']
         for moment in key_moments.split('\n'):
             st.markdown(
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
-        
+    # Footer
+    st.markdown(
+        """
+        <div style="position: relative; bottom: 0; left: 0; right: 0; background-color: #464E5F; padding: 10px;">
+            <div style="text-align: center;">
+                <a href="https://twitter.com" target="_blank" style="margin-right: 15px;">🐦 Twitter</a>
+                <a href="https://facebook.com" target="_blank" style="margin-right: 15px;">📘 Facebook</a>
+                <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+            </div>
+            <p style="text-align:center; color:white;">© 2023 - Contact Us</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )        
 
 def create_dict_from_json_files(folder_path):
     json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
