@@ -29,8 +29,8 @@ def main():
         unsafe_allow_html=True,
     )
 
-    st.sidebar.header("Podcast RSS Feeds")
-    selected_podcast = st.sidebar.selectbox("Select Podcast", options=available_podcast_info.keys())
+    # Using st.sidebar.radio instead of st.sidebar.selectbox
+    selected_podcast = st.sidebar.radio("Available Podcasts", list(available_podcast_info.keys()))
 
     #st.title("Newsletter Dashboard")
 
