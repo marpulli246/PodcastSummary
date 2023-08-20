@@ -99,28 +99,9 @@ def main():
     st.sidebar.subheader("Add and Process New Podcast Feed")
     url = st.sidebar.text_input("Link to RSS Feed")
 
-    #process_button = st.sidebar.button("Process Podcast Feed") #original
-    #New style buttom
-    process_button = """
-    <style>
-        .btn-custom {
-            background-color: #4CAF50; /* Green background */
-            border: none; /* No border */
-            color: white; /* White text */
-            padding: 12px 24px; /* Some padding */
-            cursor: pointer; /* Pointer/hand icon on hover */
-            font-size: 16px; /* Increase font size */
-            border-radius: 4px; /* Rounded corners */
-        }
-
-        .btn-custom:hover {
-            background-color: #45a049; /* Darker green on hover */
-        }
-    </style>
-    <button class="btn-custom" id="processButton">Process Podcast Feed</button>
-    """
+    process_button = st.sidebar.button("Process Podcast Feed") #original
+    #New style button starts
     
-    st.sidebar.markdown(process_button, unsafe_allow_html=True)
     #New style button ends
     
     st.sidebar.markdown("""
