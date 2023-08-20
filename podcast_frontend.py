@@ -7,7 +7,7 @@ def main():
 
     st.markdown(
         """
-        <div style="position: fixed; top: 0; left: 0; right: 0; background-color: #464E5F; padding: 10px; z-index: 999; border-radius: 10px;">
+        <div style="background-color:#464E5F;padding:10px;border-radius:10px;margin-bottom:10px">
             <h1 style="color:white;text-align:center;">🎙 - - POD BRIEFS - - 🎙</h1>
             <h4 style="color:white;text-align:center;">Podcasts Minimized - Value Maximized</h4>
         </div>
