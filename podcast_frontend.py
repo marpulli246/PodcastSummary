@@ -164,9 +164,9 @@ def main():
         """
         <div style="position: fixed; bottom: 0; left: 0; right: 0; background-color: SteelBlue; padding: 10px;">
             <div style="text-align: center;">
-                <a href="https://twitter.com" target="_blank" style="margin-right: 15px;">🐦 Twitter</a>
-                <a href="https://facebook.com" target="_blank" style="margin-right: 15px;">📘 Facebook</a>
-                <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+                <a href="https://twitter.com" target="_blank" style="margin-right: 15px; color: black;">🐦 Twitter</a>
+                <a href="https://facebook.com" target="_blank" style="margin-right: 15px; color: black;">📘 Facebook</a>
+                <a href="https://instagram.com" target="_blank" style="color: black;">📸 Instagram</a>
             </div>
             <p style="text-align:center; color:white;">© 2023 - Contact Us</p>
         </div>
