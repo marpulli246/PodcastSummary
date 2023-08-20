@@ -134,7 +134,7 @@ def main():
     <div class="note-style">**Note**: Podcast processing can take up to 5 mins, please be patient.</div>
     """, 
     unsafe_allow_html=True
-)
+    )
 
 
     if process_button:
