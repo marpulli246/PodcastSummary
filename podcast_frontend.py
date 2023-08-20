@@ -101,7 +101,7 @@ def main():
 
     #process_button = st.sidebar.button("Process Podcast Feed") #original
     #New style buttom
-    process_button_html = """
+    process_button = """
     <style>
         .btn-custom {
             background-color: #4CAF50; /* Green background */
@@ -119,11 +119,9 @@ def main():
     </style>
     <button class="btn-custom" id="processButton">Process Podcast Feed</button>
     """
+    
+    st.markdown(process_button, unsafe_allow_html=True)
     #New style button ends
-    st.markdown(process_button_html, unsafe_allow_html=True)
-
-
-
     
     st.sidebar.markdown("""
     <style>
