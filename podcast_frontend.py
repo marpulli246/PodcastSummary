@@ -8,8 +8,8 @@ def main():
     st.markdown(
         """
         <div style="background-color:#464E5F;padding:10px;border-radius:10px;margin-bottom:10px">
-            <h1 style="color:white;text-align:center;">🎙 -- POD BRIEFS -- 🎙</h1>
-            <h3 style="color:white;text-align:center;">Podcasts Minimized - Value Maximized</h3>
+            <h1 style="color:white;text-align:center;">🎙 - - POD BRIEFS - - 🎙</h1>
+            <h4 style="color:white;text-align:center;">Podcasts Minimized - Value Maximized</h4>
         </div>
         """,
         unsafe_allow_html=True,
