@@ -37,8 +37,12 @@ def main():
 
     
     # Using st.sidebar.radio instead of st.sidebar.selectbox
-    selected_podcast = st.sidebar.radio("Available Podcasts", list(available_podcast_info.keys()))
 
+    sorted_podcasts = sorted(available_podcast_info.keys())
+    selected_podcast = st.sidebar.radio("Available Podcasts", sorted_podcasts)
+
+    #selected_podcast = st.sidebar.radio("Available Podcasts", list(available_podcast_info.keys()))
+   
     #st.title("Newsletter Dashboard")
 
     #available_podcast_info = create_dict_from_json_files('.')
