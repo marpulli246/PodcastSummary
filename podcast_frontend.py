@@ -162,7 +162,7 @@ def main():
     # Footer
     st.markdown(
         """
-        <div style="position: fixed; bottom: 0; left: 0; right: 0; background-color: RoyalBlue; padding: 10px;">
+        <div style="position: fixed; bottom: 0; left: 0; right: 0; background-color: SteelBlue; padding: 10px;">
             <div style="text-align: center;">
                 <a href="https://twitter.com" target="_blank" style="margin-right: 15px;">🐦 Twitter</a>
                 <a href="https://facebook.com" target="_blank" style="margin-right: 15px;">📘 Facebook</a>
