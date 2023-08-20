@@ -120,7 +120,7 @@ def main():
     <button class="btn-custom" id="processButton">Process Podcast Feed</button>
     """
     
-    st.markdown(process_button, unsafe_allow_html=True)
+    st.sidebar.markdown(process_button, unsafe_allow_html=True)
     #New style button ends
     
     st.sidebar.markdown("""
